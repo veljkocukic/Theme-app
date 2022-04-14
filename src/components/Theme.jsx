@@ -8,7 +8,7 @@ const Theme = (props) => {
       <div className="theme-wrapper">
         <div className="img-colors">
           <div>
-            <p>Avatar:</p>
+            <p>Avatar</p>
             <img src={avatar} alt="img" />
           </div>
 

@@ -94,6 +94,7 @@ h1 {
 
 img {
   height: calc(100% - 1em);
+  border-radius: 5px;
 }
 
 .color-wrap {
