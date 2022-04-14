@@ -22,8 +22,8 @@ export const isValidLength = value => {
   let error
   if (!value) {
     error = 'Required.'
-  } else if (value.length < 5 || value.length > 80) {
-    error = 'Length must be between 5 and 80 characters.'
+  } else if (value.length <= 5 || value.length >= 350) {
+    error = 'Length must be between 5 and 350 characters.'
   }
   return error
 }
