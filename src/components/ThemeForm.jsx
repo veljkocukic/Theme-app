@@ -87,8 +87,13 @@ const ThemeForm = () => {
               validate={isValidLength}
             />
             <div className="buttons">
-              <button type="submit">Submit</button>
-              <button onClick={(e) => handleNew(e, formik.values)}>
+              <button disabled={!formik.isValid} type="submit">
+                Submit
+              </button>
+              <button
+                disabled={!formik.isValid || !formik.dirty}
+                onClick={(e) => handleNew(e, formik.values)}
+              >
                 Add new
               </button>
             </div>
