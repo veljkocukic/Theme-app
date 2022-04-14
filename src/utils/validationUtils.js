@@ -23,7 +23,7 @@ export const isValidLength = value => {
   if (!value) {
     error = 'Required.'
   } else if (value.length < 5 || value.length > 80) {
-    error = 'Lenght must be between 5 and 80 characters.'
+    error = 'Length must be between 5 and 80 characters.'
   }
   return error
 }

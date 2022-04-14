@@ -9,7 +9,7 @@ import {
   isValidLength,
 } from "../utils/validationUtils";
 
-const ThemeForm = (props) => {
+const ThemeForm = () => {
   const [currentTheme, setCurrentTheme] = useState("light");
   const { themes, initialValues, setInitalValues, setThemes } =
     useContext(DataContext);
@@ -26,6 +26,7 @@ const ThemeForm = (props) => {
       return { ...prev, [currentTheme]: values };
     });
     setInitalValues(values);
+    alert("Theme updated successfully.");
   };
 
   const handleNew = (e, values) => {

@@ -27,7 +27,7 @@ export let MainProvider = (props) => {
             intro: "Text text text text text text text text text text text text text text."
         }
     })
-    const [initialValues, setInitalValues] = useState(null)
+    const [initialValues, setInitalValues] = useState(themes.light)
 
 
     return (
