@@ -36,7 +36,7 @@ const Theme = (props) => {
         <div className="code">
           <pre>
             <code>
-              {`{\nprimary: ${primary},\nsecondary: ${secondary},\nerror: ${error},\navatar: ${avatar},\nintro: ${intro},\n}`}
+              {`{\nprimary: "${primary}",\nsecondary: "${secondary}",\nerror: "${error}",\navatar: "${avatar}",\nintro: "${intro}",\n}`}
             </code>
           </pre>
         </div>
